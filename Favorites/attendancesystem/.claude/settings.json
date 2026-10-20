@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm add *)",
+      "Bash(pnpm run *)",
+      "Bash(jobs -l)",
+      "Bash(kill %1)",
+      "Bash(timeout 8 pnpm run dev)",
+      "PowerShell(node -e \"console.log\\(require\\('crypto'\\).randomBytes\\(64\\).toString\\('hex'\\)\\)\")",
+      "PowerShell($body = '{\"full_name\":\"Test User\",\"email\":\"testuser_smoke@example.com\",\"password\":\"Test1234!\"}'; try { $r = Invoke-RestMethod -Uri \"http://localhost:3000/api/v1/auth/register\" -Method POST -ContentType \"application/json\" -Body $body; $r | ConvertTo-Json -Depth 4 } catch { $_.ErrorDetails.Message })",
+      "PowerShell(Get-Content \"c:\\\\Users\\\\ADMIN001\\\\Favorites\\\\attendancesystem\\\\backend\\\\.env\" | Where-Object { $_ -match 'SUPABASE_SERVICE_ROLE_KEY' })",
+      "PowerShell($pids = netstat -ano | Select-String \":3000\\\\s\" | ForEach-Object { \\($_ -split '\\\\s+'\\)[-1] } | Sort-Object -Unique; Write-Host \"PIDs on 3000: $pids\"; foreach \\($p in $pids\\) { try { Stop-Process -Id \\([int]$p\\) -Force -ErrorAction Stop; Write-Host \"Killed $p\" } catch { Write-Host \"Skip $p\" } })",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\ADMIN001\\\\Favorites\\\\attendancesystem\\\\backend\\\\src\\\\db\")",
+      "PowerShell(Get-Process -Id \\(Get-CimInstance Win32_Process | Where-Object { $_.ParentProcessId -eq \\(Get-Process pnpm -ErrorAction SilentlyContinue | Select-Object -First 1 -ExpandProperty Id\\) } | Select-Object -ExpandProperty ProcessId\\) -ErrorAction SilentlyContinue)",
+      "Bash(pkill -f \"pnpm approve-builds\")",
+      "Bash(echo 'approve-builds[]=esbuild' >> \"c:/Users/ADMIN001/Favorites/attendancesystem/frontend/.npmrc\" && cat \"c:/Users/ADMIN001/Favorites/attendancesystem/frontend/.npmrc\")",
+      "Bash(npx tsc *)",
+      "PowerShell(Get-Process -Name \"node\" -ErrorAction SilentlyContinue)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\ADMIN001\\Favorites\\attendancesystem\\frontend"
+    ]
+  }
+}

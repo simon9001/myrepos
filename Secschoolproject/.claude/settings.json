@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm build *)",
+      "Bash(netstat -ano)",
+      "Bash(powershell -NoProfile -Command \"Stop-Process -Id 19400 -Force\")",
+      "Bash(pnpm dev *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:4100/api/fees/payments)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5173)",
+      "Bash(git checkout *)",
+      "Bash(curl -s -X POST http://localhost:4100/api/auth/login -H \"Content-Type: application/json\" -d '{\"email\":\"bursar@school.local\",\"password\":\"ChangeMe123!\"}')",
+      "Bash(curl -s -X POST http://localhost:4100/api/auth/login -H \"Content-Type: application/json\" -d '{\"email\":\"accounts.clerk@school.local\",\"password\":\"ChangeMe123!\"}')"
+    ]
+  }
+}

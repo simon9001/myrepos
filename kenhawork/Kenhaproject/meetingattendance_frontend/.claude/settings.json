@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(pnpm build *)",
+      "Bash(nohup npm run dev)",
+      "Bash(disown)",
+      "Bash(timeout 25 bash -c 'until curl -sf http://localhost:3000 >/dev/null 2>&1 || curl -s http://localhost:3000 >/dev/null 2>&1; do sleep 1; done')",
+      "Read(//tmp/**)",
+      "Bash(curl -s http://localhost:3000/api/meetings -o /dev/null -w \"HTTP %{http_code}\\\\n\")",
+      "Bash(curl -s http://localhost:3000/ -w \"\\\\nHTTP %{http_code}\\\\n\")",
+      "Bash(curl -s -X POST http://localhost:3000/api/auth/login -H \"Content-Type: application/json\" -d '{\"email\":\"admin@kenha.co.ke\",\"password\":\"Admin@12345\"}')",
+      "Bash(curl -s -X POST http://localhost:3000/api/auth/login -H \"Content-Type: application/json\" -d '{\"email\":\"admin@kenha.co.ke\",\"password\":\"Kenha@2025!\"}')",
+      "Bash(npx tsx *)",
+      "Bash(netstat -ano)",
+      "Bash(curl -s -X POST http://localhost:3000/api/auth/login -H \"Content-Type: application/json\" -d '{\"email\":\"claude-verify-temp@kenha.co.ke\",\"password\":\"TempVerify@2026!\"}')",
+      "Bash(PORT=3099 FRONTEND_URL=http://localhost:5199 nohup npm run dev)",
+      "Bash(timeout 25 bash -c 'until curl -sf http://localhost:3099 >/dev/null 2>&1; do sleep 1; done')",
+      "Bash(VITE_API_BASE_URL=http://localhost:3099/api VITE_BACKEND_URL=http://localhost:3099 nohup npx vite --port 5199 --strictPort)",
+      "Bash(timeout 25 bash -c 'until curl -sf http://localhost:5199 >/dev/null 2>&1; do sleep 1; done')",
+      "Bash(curl -s -X POST http://localhost:3099/api/auth/login -H \"Content-Type: application/json\" -d '{\"email\":\"claude-verify-temp@kenha.co.ke\",\"password\":\"TempVerify@2026!\"}')",
+      "Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 3099,5199 -State Listen -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess -Unique\")",
+      "Bash(powershell -Command \"Stop-Process -Id 20784,24084 -Force -ErrorAction SilentlyContinue\")",
+      "Bash(grep -n \"white-space:nowrap;\\\\\">S/NO\\\\|white-space:nowrap;\\\\\">DATE SIGNED\\\\|white-space:nowrap;\\\\\">SIGNATURE\\\\|white-space:nowrap;\\\\\">\\\\${col.header}\\\\|white-space:nowrap;\\\\\">\\\\${d}\" \"C:\\\\Users\\\\ADMIN001\\\\kenhawork\\\\Kenhaproject\\\\meetingattendance_frontend\\\\front\\\\src\\\\components\\\\documents\\\\PrintEditorModal.tsx\")",
+      "Bash(node -e ' *)",
+      "Bash(powershell -Command \"Stop-Process -Id 23780,2180 -Force -ErrorAction SilentlyContinue\")",
+      "Bash(curl -s http://localhost:3000/ -w \"\\\\nshared backend HTTP %{http_code}\\\\n\")",
+      "Bash(powershell -Command \"Stop-Process -Id 6372,21800 -Force -ErrorAction SilentlyContinue\")",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Read(//c/Program Files/Google/Chrome/Application/**)",
+      "Read(//c/Program Files \\\\\\(x86\\\\\\)/Microsoft/Edge/Application/**)",
+      "PowerShell($sp = \"C:\\\\Users\\\\ADMINI~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-ADMIN001-kenhawork-Kenhaproject-meetingattendance-frontend\\\\49498e09-55a7-4dc8-9eae-04f1a716dc5b\\\\scratchpad\"; New-Item -ItemType Directory -Force $sp | Out-Null; $out = Join-Path $sp \"login_after.png\"; & \"C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\" --headless=new --disable-gpu --no-sandbox --hide-scrollbars --virtual-time-budget=6000 --window-size=1280,900 \"--screenshot=$out\" \"http://localhost:4173/\" 2>&1 | Select-Object -Last 5; Start-Sleep -Seconds 2; Get-ChildItem $sp | Select-Object Name,Length)"
+    ]
+  }
+}

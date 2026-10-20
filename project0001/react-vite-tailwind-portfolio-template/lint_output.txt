@@ -1,0 +1,60 @@
+
+> my-portfolio@0.0.0 lint
+> eslint .
+
+
+C:\Users\ADMIN001\project0001\react-vite-tailwind-portfolio-template\src\App.jsx
+  3:27  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\ADMIN001\project0001\react-vite-tailwind-portfolio-template\src\components\About.jsx
+  1:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\ADMIN001\project0001\react-vite-tailwind-portfolio-template\src\components\Academics.jsx
+  3:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\ADMIN001\project0001\react-vite-tailwind-portfolio-template\src\components\CP.jsx
+  1:17  error  'memo' is defined but never used. Allowed unused vars must match /^[A-Z_]/u    no-unused-vars
+  3:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\ADMIN001\project0001\react-vite-tailwind-portfolio-template\src\components\Contact.jsx
+  3:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\ADMIN001\project0001\react-vite-tailwind-portfolio-template\src\components\Footer.jsx
+  41:52  error  'Icon' is defined but never used  no-unused-vars
+
+C:\Users\ADMIN001\project0001\react-vite-tailwind-portfolio-template\src\components\Header.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\ADMIN001\project0001\react-vite-tailwind-portfolio-template\src\components\Projects.jsx
+  3:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\ADMIN001\project0001\react-vite-tailwind-portfolio-template\src\components\SideNav.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\ADMIN001\project0001\react-vite-tailwind-portfolio-template\src\components\Skills.jsx
+  3:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\ADMIN001\project0001\react-vite-tailwind-portfolio-template\src\components\ui\button.jsx
+  55:18  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\ADMIN001\project0001\react-vite-tailwind-portfolio-template\src\features\Api\baseQuery.js
+  3:10  error  'setCredentials' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\ADMIN001\project0001\react-vite-tailwind-portfolio-template\src\pages\Home.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\ADMIN001\project0001\react-vite-tailwind-portfolio-template\src\pages\Login.jsx
+  1:17  error  'useEffect' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  9:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u     no-unused-vars
+
+C:\Users\ADMIN001\project0001\react-vite-tailwind-portfolio-template\src\pages\Register.jsx
+  9:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\ADMIN001\project0001\react-vite-tailwind-portfolio-template\src\pages\Services.jsx
+  3:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\ADMIN001\project0001\react-vite-tailwind-portfolio-template\tailwind.config.js
+  60:13  error  'require' is not defined  no-undef
+
+Γ£û 19 problems (18 errors, 1 warning)
+

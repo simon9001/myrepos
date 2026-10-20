@@ -1,0 +1,5 @@
+src/controllers/memberships.ts(34,19): error TS6133: 'timestamp' is declared but its value is never read.
+src/controllers/memberships.ts(68,33): error TS6133: 'ResultDesc' is declared but its value is never read.
+src/controllers/memberships.ts(68,64): error TS6133: 'CallbackMetadata' is declared but its value is never read.
+src/controllers/memberships.ts(69,19): error TS6133: 'membershipId' is declared but its value is never read.
+src/controllers/memberships.ts(85,27): error TS6133: 'membership' is declared but its value is never read.
